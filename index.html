@@ -42,15 +42,18 @@
         <!-------------- Main component -------------->
             <div class="MainBox">
                 <div style="width: fit-content; margin: auto;" onmouseenter="testEnter()" onmouseleave="testOut()">
-                    <div id='CardBoxFilm+id' class="CardBox">
+                    <div class="CardBox">
                         <div class="ImgCardBox">
-                            <img class="MovieImgCard" src="./affiche.jpg" width="220"/>
+                            <img id='CardBoxFilm+id' class="MovieImgCard" src="./affiche.jpg" width="220"/>
                             <span class="DateCardBox">15 dec. 2021</span>
                         </div>
                         <div class="TxtCardBox">
-                            <p style="font-size: 14px;">Jack Reacher</p>
-                            <div class="NoteCard">
-                                <span>85%</span>
+                            <div style="display: flex;flex-direction: column;justify-content: center;max-width: 160px;">
+                                <p style="font-size: 14px;margin: 0;">Jack Reacher</p>
+                                <span class='GenreBox'>Action</span>
+                            </div>
+                            <div style="display: flex;justify-content: center;">
+                                <span class="NoteCard">85%</span>
                             </div>
                         </div>
                     </div>

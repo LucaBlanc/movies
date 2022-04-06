@@ -167,6 +167,16 @@
     box-shadow: 0px 0px 6px 2px #00000040;
 }
 
+.GenreBox{
+    font-size: 10px;
+    margin: 0;
+    background: #a55eea;
+    padding: 3px 8px 2px 8px;
+    border-radius: 50px;
+    width: fit-content;
+    margin-top: 5px;
+}
+
 @media screen and (max-width: 1225px) {
     .MainBox{
         padding: 20px 50px;
