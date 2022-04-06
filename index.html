@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="./index.css">
+        <link href="http://fonts.cdnfonts.com/css/akira-expanded" rel="stylesheet">
+    </head>
+
+    <script>
+        let test = false
+
+        function testEnter(){
+            let card = document.getElementById('CardBoxFilm+id')
+            card.style.filter = 'blur(2px) grayscale(1)'
+
+            let elem = document.getElementById('CardBtnFilm+id')
+            elem.style.display = 'flex'
+        }
+
+        function testOut(){
+            let card = document.getElementById('CardBoxFilm+id')
+            card.style.filter = 'none'
+
+            let elem = document.getElementById('CardBtnFilm+id')
+            elem.style.display = 'none'
+        }
+    </script>
+
+    <body class="BodyWrapper">
+
+        <!-------------- Menu component -------------->
+            <div class="Menu">
+                <span class="logo">Movies</span>
+                <div>
+                    <span class="navTxt navTxtActive">Films</span>  
+                    <span class="navTxt">Series</span>
+                    <span class="navTxt">Acteurs</span>
+
+                    <span class="navBtn">Inscription</span>
+                </div>
+            </div>
+        <!-------------- End Menu component -------------->  
+
+        <!-------------- Main component -------------->
+            <div class="MainBox">
+                <div style="width: fit-content; margin: auto;" onmouseenter="testEnter()" onmouseleave="testOut()">
+                    <div id='CardBoxFilm+id' class="CardBox">
+                        <div class="ImgCardBox">
+                            <img class="MovieImgCard" src="./affiche.jpg" width="220"/>
+                            <span class="DateCardBox">15 dec. 2021</span>
+                        </div>
+                        <div class="TxtCardBox">
+                            <p style="font-size: 14px;">Jack Reacher</p>
+                            <div class="NoteCard">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span id="CardBtnFilm+id" class="CardBtn">Voir l'affiche</span>
+                </div>
+            </div>
+        <!-------------- End Main component -------------->
+
+        <!-------------- Footer component -------------->
+            <div class="Footer">
+
+            </div>
+        <!-------------- End Footer component -------------->
+    </body>
+</html>

@@ -1,0 +1,183 @@
+.BodyWrapper{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Akira Expanded', sans-serif;
+}
+
+.RootWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------ Menu component ------------*/
+
+.Menu{
+    display: flex;
+    background: #a55eea;
+    margin: 25px 40px;
+    border-radius: 100px;
+    box-shadow: 0px 0px 6px 2px #00000040;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 30px;
+    padding: 20px 40px;
+    color: white;
+}
+
+.navTxt{
+    color: white;
+    font-size: 20px;
+    margin: 0 20px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    padding: 5px 15px;
+}
+
+.navTxtActive{
+    background: #7e3dc0;
+    border-radius: 50px;
+}
+
+.navTxt:hover{
+    transition-duration: 0.3s;
+    background: #7e3dc0;
+    border-radius: 50px;
+}
+
+.navBtn{
+    color: #a55eea;
+    font-size: 20px;
+    margin:0 20px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: white;
+    transition-duration: 0.3s;
+}
+
+.navBtn:hover{
+    box-shadow: 0px 0px 6px 2px #00000040;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1113px) {
+    .navTxt{
+        color: white;
+        font-size: 15px;
+        margin: 0 10px;
+        cursor: pointer;
+        border-bottom: solid 2px #a55eea;
+        transition-duration: 0.3s;
+    }
+
+    .navBtn{
+        color: #a55eea;
+        font-size: 15px;
+        margin:0 20px;
+        padding: 10px 15px;
+        border-radius: 30px;
+        background: white;
+        transition-duration: 0.3s;
+    }
+}
+
+/*------------ End Menu component ------------*/
+
+.MainBox{
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+}
+
+.CardBox{
+    background: #e3e3e3;
+    width: fit-content;
+    padding: 12px;
+    border-radius: 10px;
+    border: solid 2px #d6d6d6;
+    box-shadow: 0px 0px 5px 2px #00000035;
+    margin: auto;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.ImgCardBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.DateCardBox{
+    position: relative;
+    bottom: 16px;
+    background: #a55eea;
+    color: white;
+    font-size: 14px;
+    width: fit-content;
+    padding: 5px 10px;
+    align-self: flex-end;
+    border-radius: 50px;
+    left: 5px;
+}
+
+.MovieImgCard{
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: top;
+    border: solid 2px #cccccc;
+}
+
+.TxtCardBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.NoteCard{
+    background: #4caf50;
+    padding: 15px 7px;
+    border-radius: 11px;
+    font-size: 13px;
+}
+
+.CardBtn{
+    display: none;
+    position: relative;
+    bottom: 250px;
+    color: white;
+    background: #a55eea;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 50px;
+    margin-bottom: -29px;
+    cursor: pointer;
+    margin-bottom: -29px !important;
+    margin: auto;
+    transition-duration: 0.3s;
+}
+
+.CardBtn:hover{
+    transition-duration: 0.3s;
+    background: #7e3dc0;
+    box-shadow: 0px 0px 6px 2px #00000040;
+}
+
+@media screen and (max-width: 1225px) {
+    .MainBox{
+        padding: 20px 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+    }
+}
+
+.Footer{
+    display: flex;
+    background: white;
+    height: 100px;
+}
