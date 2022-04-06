@@ -12,7 +12,7 @@
             card.style.filter = 'blur(2px) grayscale(1)'
 
             let elem = document.getElementById('CardBtnFilm+id')
-            elem.style.display = 'flex'
+            elem.style.zIndex = 100
         }
 
         function testOut(){
@@ -20,7 +20,7 @@
             card.style.filter = 'none'
 
             let elem = document.getElementById('CardBtnFilm+id')
-            elem.style.display = 'none'
+            elem.style.zIndex = 1
         }
     </script>
 
@@ -38,6 +38,10 @@
                 </div>
             </div>
         <!-------------- End Menu component -------------->  
+
+            <div>
+                <h1 style="text-align: center;font-size: 50px;">Films</h1>
+            </div>
 
         <!-------------- Main component -------------->
             <div class="MainBox">

@@ -29,7 +29,7 @@
 
 .logo{
     font-size: 40px;
-    padding: 20px 40px;
+    padding: 15px 40px;
     color: white;
 }
 
@@ -109,6 +109,8 @@
     margin: auto;
     cursor: pointer;
     transition-duration: 0.3s;
+    z-index: 50;
+    position: relative;
 }
 
 .ImgCardBox{
@@ -153,7 +155,7 @@
 }
 
 .CardBtn{
-    display: none;
+    display: flex;
     position: relative;
     bottom: 250px;
     font-size: 18px;
@@ -164,7 +166,7 @@
     border-radius: 50px;
     margin-bottom: -29px;
     cursor: pointer;
-    margin-bottom: -29px !important;
+    /* margin-bottom: -29px !important; */
     margin: auto;
     transition-duration: 0.3s;
 }
