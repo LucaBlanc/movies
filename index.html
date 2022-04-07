@@ -2,6 +2,7 @@
     <head>
         <link type="text/css" rel="stylesheet" href="./index.css">
         <link href="http://fonts.cdnfonts.com/css/akira-expanded" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     </head>
 
     <script>
@@ -38,10 +39,36 @@
                 </div>
             </div>
         <!-------------- End Menu component -------------->  
+        
+        <!-------------- Search component -------------->  
+            <div style="display: flex;flex-direction: column;justify-content: center;">
+                <h1 style="text-align: center;font-size: 50px;margin-bottom: 0;">Films</h1>
+                <span class="HeaderLine"></span>
+                <div style="display: flex;flex-direction: row;justify-content: space-between;padding: 0 50px;">
+                    <div class="SearchSelectBox">
+                        <select class="SearchSelect">
+                            <option style="background: #dddddd;" value="" disabled selected>Genre</option>
+                            
+                            <option style="background: #dddddd;" value="idGenre">LibelleGenre </option>
+                        </select>
+                    </div>
+                    
+                    <div class="SearchResolutionBox">
+                        <span class="SearchResolutionItem">Tout</span>
+                        <span class="SearchResolutionItem">HD</span>
+                        <span class="SearchResolutionItem">4K</span>
+                    </div>
+                </div>
 
-            <div>
-                <h1 style="text-align: center;font-size: 50px;">Films</h1>
+                <div class="SearchBar">
+                    <input class="SearchInput" placeholder="Rechercher"/>
+                    <div class="SearchIconeBox">
+                        <i class="fa-solid fa-magnifying-glass SearchIcone"></i>
+                    </div>
+                </div>
+
             </div>
+        <!-------------- End Search component -------------->
 
         <!-------------- Main component -------------->
             <div class="MainBox">
